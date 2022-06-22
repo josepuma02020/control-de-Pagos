@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\HomeController as HomeController;
 use App\Http\Controllers\DashboardController as DashboardController;
+use App\Http\Controllers\ExpenseReportController as ExpenseReportController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -18,3 +19,5 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', [HomeController::class, 'index']);
 
 Route::get('/dashboard',  [DashboardController::class, 'index']);
+
+Route::resource('/expense_reports', ExpenseReportController::class);
