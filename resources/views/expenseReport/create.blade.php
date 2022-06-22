@@ -14,11 +14,12 @@
     <div class="row">
         <div class="col">
             <form action="/expense_reports/" method="POST">
+                @csrf
                 <div class="form-group">
-                    <label for="title">Title</label>
-                    <input type="text" class="form-control" id="title" name="title" placeholder="title">
+                    <label for="title">Title:</label>
+                    <input type="text" class="form-control" id="title" name="title" placeholder="Type a title">
                 </div>
-                <button type="submit" class="btn btn-primary">Submit</button>
+                <button class="btn btn-primary" type="submit">Submit</button>
             </form>
         </div>
     </div>
